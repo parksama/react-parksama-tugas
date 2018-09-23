@@ -2,7 +2,7 @@
   "name": "my-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://parksama.github.io/react-parksama-tugas",
+  "homepage": "http://tugas.nyobi.pw",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.3.1",
     "bootstrap": "^3.3.7",
