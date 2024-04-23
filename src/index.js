@@ -7,10 +7,11 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import jQuery from 'jquery/src/jquery';
 import 'bootstrap/dist/js/bootstrap';
+import { createRoot } from 'react-dom/client';
 
-var root = jQuery('#root');
-if(root.length)
-{
-    ReactDOM.render(<App />, root[0]);
+const APP_ROOT = document.querySelector('#root');
+if (APP_ROOT) {
+    const root = createRoot(APP_ROOT);
+    root.render(<App />);
     registerServiceWorker();
 }

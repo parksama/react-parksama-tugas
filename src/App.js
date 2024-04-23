@@ -132,7 +132,6 @@ class TodoList extends Component {
 				<div className="list-group">
 					{this.props.daftar.map((item, key) => (
 						<div className={'list-group-item checkbox ' + (item.selesai ? 'list-group-item-success' : '')} key={item.key}>
-							<i className="fas fa-times pull-right list-remove-btn" title="Hapus tugas" onClick={this.on_hapus.bind(this, [key])}></i>
 							<label>
 								<input
 									type="checkbox"
@@ -142,6 +141,7 @@ class TodoList extends Component {
 									onChange={this.on_check.bind(this)} />
 								{item.judul}
 							</label>
+							<i className="fas fa-times list-remove-btn" title="Hapus tugas" onClick={this.on_hapus.bind(this, [key])}></i>
 						</div>
 					))}
 				</div>
